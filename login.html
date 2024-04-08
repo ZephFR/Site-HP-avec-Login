@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="tabs">
+            <button id="Login" class="tablinks" onclick="LoginFormOn(), openCity(event, 'LogIn')">Connexion</button>
+            <button id="SignUp" class="tablinks" onclick="SignUpFormOn(), openCity(event, 'SignUp')">Inscription</button>
+            <button class="tablinks" onclick="location.href = 'cards.html'">Mode Invité</button>
+        </div>
+        <!--Header avec menu. Les boutons Connexion et Inscription change le formulaire, et Mode Invité lance la page-->
+    </header> 
+    <content>
+        <div class="BoxFormulaire" id="loginForm">
+            <h2>Connexion</h2>
+            <form onsubmit="return LogInValidation()">
+                <div>
+                    <label for="loginEmail">Email :</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div>
+                    <label for="loginPassword">Mot de passe :</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div>
+                    <button type="submit">Se connecter</button>
+                </div>
+            </form>
+        </div>
+        <div class="BoxFormulaire" id="signupForm" style="display: none;">
+            <h2>Inscription</h2>
+            <form onsubmit="return SignUpValidation()">
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="username">Pseudo :</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div>
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirmer le mot de passe :</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div>
+                    <button type="submit">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+    </content>
+    <script src="login.js" defer></script>
+</body>
+</html>

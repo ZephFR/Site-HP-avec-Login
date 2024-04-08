@@ -1,0 +1,142 @@
+body {
+    /* The image used */
+    background-image: url("https://media.discordapp.net/attachments/1039950281884049550/1226984390681432104/HP_BG_Top.png?ex=6626c143&is=66144c43&hm=ed9d8710c53bf40c3d8bb41e81f4ee0b3174b6954edd5817ebee0adf9585e78b&=&format=webp&quality=lossless&width=1246&height=701");  
+    /* Set a specific height */
+    min-height: 1300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+content {
+    padding-top:5em;
+    display : flex;
+    justify-content: center;
+}
+/* Style the tab */
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+width: 100%;
+  height: 100%;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #a1000e 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #a1000e 0,
+        #a1000e 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #a1000e 0,
+        #a1000e 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #a1000e 0,
+        #a1000e 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #a1000e 0,
+        #a1000e 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #a1000e 2%, #282828 0, #282828 98%, #a1000e 0%) 0 0
+      #282828;
+    background-size: 40px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabs button {
+  background-color: inherit;
+  float: left;
+  border: white 100%;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: #43fdfd9d;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color: #034449da;
+}
+
+.Formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.PageEntree {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(#acacac, rgb(97, 97, 97));
+}
+
+.PageEntree button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.PageEntree button:hover {
+  background-color: #ddd;
+}
+
+.BoxFormulaire {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 21%, rgba(111,0,255,1) 100%);
+  color: white;
+}
+
+.BoxFormulaire h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+h6 {
+  bottom: 30cm;
+  color: white;
+  flex-direction: column;
+}
+
+/* Le menu en haut de l'écran utilise un fond que j'ai trouvé sur uiverse.io, dans la partie "Paterns" fait par Kandalgaonkarshubham : https://uiverse.io/kandalgaonkarshubham/mean-catfish-62 */

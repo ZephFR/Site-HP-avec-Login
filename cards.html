@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnages Harry Potter</title>
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+    <header>
+        <div class="tabs">
+            <h1> Votre Inventaire de cartes</h1>
+            <button class="tablinks" onclick="location.href = 'account.html'">Inventaire</button>
+        </div>
+    </header>
+    <content>
+        <h1> ‎ </h1>
+        <div id="character" class="row"></div>
+        <div class="BoxFormulaire" id="partage" style="display: none;">
+            <h2>Partage</h2>
+            <form onsubmit="return EnvoiCarte()">
+                <div>
+                    <label for="email">Email du destinataire :</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="numero">ID de la carte à envoyer :</label>
+                    <input type="number" id="numero" name="numero" min="1" max="30">
+                </div>
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </content>
+    <h1> ‎ </h1><!--étant limité par le temps qu'il me restait, j'ai simplement mit un caractère invisible pour laisser de l'espace entre les cartes et le footer-->
+    <footer>
+        <div class="tabs">
+            <button id="SignUp" class="tablinks" onclick="PartageForm()">Partage de cartes</button>
+        </div>
+    </footer>
+    <script src="cards.js" defer></script>
+</body>
+</html>
